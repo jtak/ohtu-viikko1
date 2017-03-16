@@ -39,3 +39,16 @@ jar {
         attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
     }
 }
+
+// Coveralls-plugin
+plugins {
+    id 'com.github.kt3k.coveralls' version '2.8.1'
+}
+
+// Create xml-format jacoco report for coveralls
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+}
