@@ -2,3 +2,4 @@ Kuha
 Ahven
 Hauki ei ole kala
 Fugu
+Turska
